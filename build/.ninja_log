@@ -1,0 +1,7 @@
+# ninja log v5
+0	722	1725627991958885419	CMakeFiles/udpSocket.dir/main.cpp.o	68b03865627c20a1
+731	2737	1725627993962882383	udpSocket	e8daa127307b0e9d
+20	522	1725631091244454788	CMakeFiles/udpSocket.dir/src/Socket.cpp.o	52a751f594a04ea0
+0	1418	1725631092140447229	CMakeFiles/udpSocket.dir/main.cpp.o	ceed460b5bad85d5
+522	14470	1725631105164341014	CMakeFiles/udpSocket.dir/src/SocketUDP.cpp.o	24a55ade00263d46
+14471	18985	1725631109688305696	udpSocket	d28264a61def1e05

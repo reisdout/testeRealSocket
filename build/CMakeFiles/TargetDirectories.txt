@@ -1,0 +1,3 @@
+/home/ns/TesteReal/testeRealSocket/build/CMakeFiles/udpSocket.dir
+/home/ns/TesteReal/testeRealSocket/build/CMakeFiles/edit_cache.dir
+/home/ns/TesteReal/testeRealSocket/build/CMakeFiles/rebuild_cache.dir
