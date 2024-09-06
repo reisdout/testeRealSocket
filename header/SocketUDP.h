@@ -19,9 +19,7 @@ public:
 
 char buffer[100]; 
 std::string message; 
-
-
-SocketUDP(){};
+SocketUDP();
 virtual ~SocketUDP(){};
 virtual void Send();
 virtual void Receive();

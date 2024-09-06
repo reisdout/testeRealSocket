@@ -1,3 +1,4 @@
+#pragma once
 #include "./SocketUDP.h"
 
 class SocketUDPClient : public SocketUDP{
@@ -5,7 +6,7 @@ class SocketUDPClient : public SocketUDP{
 public:
 
 SocketUDPClient();
-~SocketUDPClient(){};//A classe concreta não precisa de destrutor virtual.
+~SocketUDPClient(){close(sockfd);};//A classe concreta não precisa de destrutor virtual.
 virtual void Send();
 virtual void Receive();
 virtual void Bind();

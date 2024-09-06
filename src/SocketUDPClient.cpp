@@ -16,12 +16,13 @@ SocketUDPClient::SocketUDPClient()
 
 void SocketUDPClient::Send()
 {
-    std::cout << "Enviando...\n";
+    sendto(sockfd, message.c_str(), MAXLINE, 0, (struct sockaddr*)NULL, sizeof(servaddr)); 
 }
 
 void SocketUDPClient::Receive()
 {
-    std::cout << "Recebendo\n";
+    recvfrom(sockfd, buffer, sizeof(buffer), 0, (struct sockaddr*)NULL, NULL); //Fica esperando
+    puts(buffer); 
 }
 
 void SocketUDPClient::Bind()

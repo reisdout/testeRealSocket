@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/udpSocket.dir/main.cpp.o CMakeFiles/udpSocket.dir/src/Socket.cpp.o CMakeFiles/udpSocket.dir/src/SocketUDP.cpp.o CMakeFiles/udpSocket.dir/src/SocketUDPClient.cpp.o CMakeFiles/udpSocket.dir/src/SocketUDPServer.cpp.o -o udpSocket 

@@ -1,17 +1,27 @@
 [
 {
   "directory": "/home/ns/TesteReal/testeRealSocket/build",
-  "command": "/usr/bin/c++ -I/home/ns/TesteReal/testeRealSocket/header -g -o CMakeFiles/udpSocket.dir/main.cpp.o -c /home/ns/TesteReal/testeRealSocket/main.cpp",
+  "command": "/usr/bin/c++  -I/home/ns/TesteReal/testeRealSocket/header -g -o CMakeFiles/udpSocket.dir/main.cpp.o -c /home/ns/TesteReal/testeRealSocket/main.cpp",
   "file": "/home/ns/TesteReal/testeRealSocket/main.cpp"
 },
 {
   "directory": "/home/ns/TesteReal/testeRealSocket/build",
-  "command": "/usr/bin/c++ -I/home/ns/TesteReal/testeRealSocket/header -g -o CMakeFiles/udpSocket.dir/src/Socket.cpp.o -c /home/ns/TesteReal/testeRealSocket/src/Socket.cpp",
+  "command": "/usr/bin/c++  -I/home/ns/TesteReal/testeRealSocket/header -g -o CMakeFiles/udpSocket.dir/src/Socket.cpp.o -c /home/ns/TesteReal/testeRealSocket/src/Socket.cpp",
   "file": "/home/ns/TesteReal/testeRealSocket/src/Socket.cpp"
 },
 {
   "directory": "/home/ns/TesteReal/testeRealSocket/build",
-  "command": "/usr/bin/c++ -I/home/ns/TesteReal/testeRealSocket/header -g -o CMakeFiles/udpSocket.dir/src/SocketUDP.cpp.o -c /home/ns/TesteReal/testeRealSocket/src/SocketUDP.cpp",
+  "command": "/usr/bin/c++  -I/home/ns/TesteReal/testeRealSocket/header -g -o CMakeFiles/udpSocket.dir/src/SocketUDP.cpp.o -c /home/ns/TesteReal/testeRealSocket/src/SocketUDP.cpp",
   "file": "/home/ns/TesteReal/testeRealSocket/src/SocketUDP.cpp"
+},
+{
+  "directory": "/home/ns/TesteReal/testeRealSocket/build",
+  "command": "/usr/bin/c++  -I/home/ns/TesteReal/testeRealSocket/header -g -o CMakeFiles/udpSocket.dir/src/SocketUDPClient.cpp.o -c /home/ns/TesteReal/testeRealSocket/src/SocketUDPClient.cpp",
+  "file": "/home/ns/TesteReal/testeRealSocket/src/SocketUDPClient.cpp"
+},
+{
+  "directory": "/home/ns/TesteReal/testeRealSocket/build",
+  "command": "/usr/bin/c++  -I/home/ns/TesteReal/testeRealSocket/header -g -o CMakeFiles/udpSocket.dir/src/SocketUDPServer.cpp.o -c /home/ns/TesteReal/testeRealSocket/src/SocketUDPServer.cpp",
+  "file": "/home/ns/TesteReal/testeRealSocket/src/SocketUDPServer.cpp"
 }
 ]
