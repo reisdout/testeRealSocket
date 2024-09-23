@@ -8,6 +8,7 @@ public:
 SocketUDPClient();
 ~SocketUDPClient(){close(sockfd);};//A classe concreta não precisa de destrutor virtual.
 virtual void Send();
+virtual void SendNSegmens(unsigned parNSeg);
 virtual void Receive();
 virtual void Bind();
 

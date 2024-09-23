@@ -12,16 +12,17 @@
 #include <iostream>
 
 #define PORT 5000 
-#define MAXLINE 1000 
+#define MAXLINE 2000 
 
 class SocketUDP : public Socket{
 public:
 
-char buffer[100]; 
+char buffer[MAXLINE]; 
 std::string message; 
 SocketUDP();
 virtual ~SocketUDP(){};
 virtual void Send();
+virtual void SendNSegmens(unsigned parNSeg){};
 virtual void Receive();
 virtual void Bind();
 

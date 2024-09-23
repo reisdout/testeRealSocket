@@ -26,7 +26,9 @@ void SocketUDPServer::Receive()
     int n = recvfrom(listenfd, buffer, sizeof(buffer), 
             0, (struct sockaddr*)&cliaddr,(socklen_t *)&len); //receive message from server 
     buffer[n] = '\0'; 
+    printf("%d --> Received these %d bytes:\n",segmentsReceived+1, n);
     puts(buffer);
+    segmentsReceived++;
     this->Send();
 }
 

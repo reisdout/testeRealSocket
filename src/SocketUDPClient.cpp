@@ -19,6 +19,25 @@ void SocketUDPClient::Send()
     sendto(sockfd, message.c_str(), MAXLINE, 0, (struct sockaddr*)NULL, sizeof(servaddr)); 
 }
 
+
+void SocketUDPClient::SendNSegmens(unsigned parNSeg)
+{
+    
+    for (unsigned i=0; i<parNSeg;i++)
+    {
+        this->message.clear();
+        for (unsigned j=0; j< SEGMENT_SIZE; j++)
+            message = message+'a';
+    
+        printf("Mandando:\n");
+        printf("%s", message.c_str());
+        printf("\n");
+        sendto(sockfd, message.c_str(), message.size(), 0, (struct sockaddr*)NULL, sizeof(servaddr));
+    }
+
+
+}
+
 void SocketUDPClient::Receive()
 {
     recvfrom(sockfd, buffer, sizeof(buffer), 0, (struct sockaddr*)NULL, NULL); //Fica esperando

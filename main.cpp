@@ -8,39 +8,41 @@ int main(int argc, char**argv){
     //bool server = true;
     //bool debug = true;
     std::cout << argv[1]<<"\n";
-    if(argc == 2)
+    if(std::string(argv[1]) == "client" )
     {
-
-        if(std::string(argv[1]) == "client" )
+        if(argc < 3)
         {
-            
+            printf("Packets missing\n");
+        }
+        else
+        {
             ptSocket = new SocketUDPClient();
             ptSocket->Bind();
             int n = 0;
-            while(n < 10)
+            while(n < std::stoi(std::string(argv[2])))
             {
-                ptSocket->Send();
+                ptSocket->SendNSegmens(1);
                 n++;
             }
             ptSocket->Receive();
-
-        }
-        else if (std::string(argv[1]) == "server" )
-        {
-            ptSocket = new SocketUDPServer();
-            std::cout << "Servidor instanciado\n";
-            ptSocket->Bind();
-            std::cout <<"Press any key to stop\n";
-            while(true)
-                ptSocket->Receive();
-
- 
         }
 
-        
+    }
+    else if (std::string(argv[1]) == "server" )
+    {
+        ptSocket = new SocketUDPServer();
+        std::cout << "Servidor instanciado\n";
+        ptSocket->Bind();
+        std::cout <<"Press any key to stop\n";
+        while(true)
+            ptSocket->Receive();
+
+
     }
     else
-        std::cout << "Wrong Command format (udpSocket -client or -server)\n";
+        printf("Wrong parameters\n"); 
+
+        
     
     if(ptSocket)
         delete ptSocket;
