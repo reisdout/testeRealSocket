@@ -6,7 +6,7 @@ SocketUDPClient::SocketUDPClient()
 {
     this->message= "Hello  my Server";
     bzero(&servaddr, sizeof(servaddr)); 
-    servaddr.sin_addr.s_addr = inet_addr("127.0.0.1"); 
+    servaddr.sin_addr.s_addr = inet_addr("192.168.0.106"); 
     servaddr.sin_port = htons(PORT); 
     servaddr.sin_family = AF_INET; 
     sockfd = socket(AF_INET, SOCK_DGRAM, 0); 
@@ -22,11 +22,13 @@ void SocketUDPClient::Send()
 
 void SocketUDPClient::SendNSegmens(unsigned parNSeg)
 {
+    unsigned msgSize = 1.2 * SEGMENT_SIZE;
     
     for (unsigned i=0; i<parNSeg;i++)
     {
         this->message.clear();
-        for (unsigned j=0; j< SEGMENT_SIZE; j++)
+        printf("Gerando %d Mensagem......\n", msgSize);
+        for (unsigned j=0; j< msgSize; j++)
             message = message+'a';
     
         printf("Mandando:\n");

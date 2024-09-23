@@ -12,7 +12,7 @@
 #include <iostream>
 
 #define PORT 5000 
-#define MAXLINE 2000 
+#define MAXLINE 350*SEGMENT_SIZE 
 
 class SocketUDP : public Socket{
 public:
